@@ -1,0 +1,1 @@
+alert('My script.js file is linked')

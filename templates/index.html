@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <title>Counter</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Page Views Counter</h2>
+            <h4>{{ count }} Times!</h4>
+            <form action="/plus2" method="POST">
+                <input type="submit" value="+2">
+            </form>
+            <form action="/reset" method="POST">
+                <input type="submit" value="reset">
+            </form>
+        </div>
+    </body>
+</html>
